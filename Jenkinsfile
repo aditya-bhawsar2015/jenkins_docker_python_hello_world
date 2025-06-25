@@ -29,7 +29,7 @@ pipeline {
                 sh "docker run --rm ${env.DOCKER_IMAGE}"
                }
           }
-
+    }
     post {
         success {
             echo 'Python application Docker image built successfully.'
@@ -38,5 +38,5 @@ pipeline {
             echo 'Docker build or run failed.'
         }
     }
-  }
 }
+
