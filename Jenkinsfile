@@ -38,4 +38,5 @@ pipeline {
             echo 'Docker build or run failed.'
         }
     }
+  }
 }
